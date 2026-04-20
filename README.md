@@ -1,8 +1,8 @@
 # CN Orange Probelm:
- -Name:Prakruthi.NK
- -SRN-PES2UG24AM118
- -Topic- Packet drop Simulator(SDN)
- -Section -B(AIML)
+ Name:Prakruthi.NK
+ SRN-PES2UG24AM118
+ Topic- Packet drop Simulator(SDN)
+ Section -B(AIML)
 
 # SDN-Based Traffic Filtering using POX Controller
 
