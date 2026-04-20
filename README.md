@@ -1,3 +1,8 @@
+# Name:Prakruthi.NK
+# SRN-PES2UG24AM118
+# Topic- Packet drop Simulator(SDN)
+# Section -B(AIML)
+
 # SDN-Based Traffic Filtering using POX Controller
 
 ##  Project Overview
@@ -64,28 +69,37 @@ The controller:
 ### Step 1: Install Mininet
 ```bash
 sudo apt update
-sudo apt install mininet -y
+sudo apt installmininet -y
+
 Step 2: Clone POX
 git clone https://github.com/noxrepo/pox.git
 cd pox
+
  How to Run
+
 Terminal 1: Start Controller
 cd ~/pox
 python3 pox.py controller
+
 Terminal 2: Start Mininet
 sudo mn --topo single,2 --controller=remote,ip=127.0.0.1,port=6633
+
  Test Commands
 h1 ping -c 5 h2
 h2 ping -c 5 h1
 pingall
+
  Results
  Ping from h1 to h2
 100% packet loss
 Traffic successfully blocked
+
  Pingall Output
 100% dropped (0/2 received)
+
  Screenshots
 1. Controller Running
+<img width="812" height="212" alt="Screenshot 2026-04-20 212732" src="https://github.com/user-attachments/assets/9d5c1ab6-4941-459f-bf65-b96bb3303270" />
 
 Shows POX controller active and switch connected
  screenshots/controller_running.png
@@ -97,7 +111,9 @@ Controller log showing:
 IP 10.0.0.1 -> 10.0.0.2
 DROP h1 -> h2
 
- screenshots/drop_log.png
+ <img width="805" height="291" alt="Screenshot 2026-04-20 211115" src="https://github.com/user-attachments/assets/eaf93ff7-8366-40ce-80e4-10246e788d24" />
+
+
 
 3. Mininet Topology
 
@@ -105,22 +121,28 @@ Command:
 
 net
 
- screenshots/topology.png
+ <img width="471" height="117" alt="Screenshot 2026-04-20 212911" src="https://github.com/user-attachments/assets/e58244a1-3507-4426-9df0-876008541586" />
+
 
 4. Ping Test (h1 → h2)
 100% packet loss
 
- screenshots/ping_test.png
+<img width="664" height="129" alt="Screenshot 2026-04-20 212957" src="https://github.com/user-attachments/assets/6a77841d-d935-404f-a758-fdf979d5d42f" />
+
 
 5. Pingall Result
 *** Results: 100% dropped (0/2 received)
 
- screenshots/pingall.png
+ <img width="592" height="123" alt="Screenshot 2026-04-20 213051" src="https://github.com/user-attachments/assets/465f9b7c-2d9d-42b2-bdbf-4c3c470f9bad" />
+
 
 6. ARP Table
 
 Shows MAC resolution working
- screenshots/arp_table.png
+<img width="407" height="45" alt="image" src="https://github.com/user-attachments/assets/0b8e56e4-18ed-4244-ac20-1a454cec2499" />
+<img width="407" height="41" alt="image" src="https://github.com/user-attachments/assets/08e891bb-2eb4-425a-9150-954e5328f0f7" />
+
+
 
  Analysis
 The drop rule successfully blocks traffic from h1 to h2
