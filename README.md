@@ -98,27 +98,6 @@ Traffic successfully blocked
  Pingall Output
 100% dropped (0/2 received)
 
- Screenshots
-### Controller Running
-![Controller Output](screenshots/controller.png)
-
-### Packet Drop Log
-![Drop Log](screenshots/drop.png)
-
-### Mininet Topology
-![Topology](screenshots/topology.png)
-
-### Ping Test (h1 → h2)
-![Ping Result](screenshots/ping.png)
-
-### Pingall Result
-![Pingall Output](screenshots/pingall.png)
-
-### ARP Table
-![ARP Table](screenshots/arp.png)
-
-
-
  Analysis
 The drop rule successfully blocks traffic from h1 to h2
 Packet loss confirms enforcement of controller logic
